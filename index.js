@@ -2,20 +2,21 @@
 
 var REPLIE = require('./lib/replie'),
 	repl = new REPLIE({
-		prompt: 'Hello World',
+		prompt: 'REPLIE',
 		startServer: true,
 		modules: [
 			{
 				name: 'shelljs',
 				type: 'external'
-			},
-			{
-				name: 'async',
-				type: 'external'
-			},
-			{
-				name: 'lodash.clone',
-				type: 'external'
 			}
-		]
+			// {
+			// 	name: 'async',
+			// 	type: 'external'
+			// },
+			// {
+			// 	name: 'lodash.clone',
+			// 	type: 'external'
+			// }
+		],
+		namespace: 'test'
 	});
