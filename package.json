@@ -1,6 +1,6 @@
 {
   "name": "replie",
-  "version": "1.0.19",
+  "version": "1.0.191",
   "description": "A basic web socket based repl",
   "main": "index.js",
   "scripts": {
