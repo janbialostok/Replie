@@ -1,6 +1,6 @@
 {
   "name": "replie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A basic web socket based repl",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,13 @@
   },
   "keywords": [
     "repl",
-    "node"
+    "node",
+    "websockets"
   ],
   "author": "Jan Bialostok",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.0.5",
-    "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "shelljs": "^0.5.3",
     "socket.io": "^1.3.7",
