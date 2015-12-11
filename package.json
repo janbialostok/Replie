@@ -1,6 +1,6 @@
 {
   "name": "replie",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A basic web socket based repl",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,10 @@
   ],
   "author": "Jan Bialostok",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janbialostok/Replie"
+  },
   "dependencies": {
     "bluebird": "^3.0.5",
     "express": "^4.13.3",
