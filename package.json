@@ -21,7 +21,7 @@
     "email": "yaw.etse@gmail.com",
     "url": "http://about.me/yawjosephetse"
   }],
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/janbialostok/Replie.git"
