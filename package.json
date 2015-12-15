@@ -1,6 +1,6 @@
 {
   "name": "replie",
-  "version": "1.0.2",
+  "version": "1.0.21",
   "description": "A basic web socket based repl",
   "main": "index.js",
   "scripts": {
@@ -12,15 +12,17 @@
     "websockets"
   ],
   "author": {
-      "name": "Jan Bialostok",
-      "email": "janbialostok@gmail.com",
-      "url": "https://github.com/janbialostok"
+    "name": "Jan Bialostok",
+    "email": "janbialostok@gmail.com",
+    "url": "https://github.com/janbialostok"
   },
-  "contributors": [{
-    "name": "Yaw Joseph Etse",
-    "email": "yaw.etse@gmail.com",
-    "url": "http://about.me/yawjosephetse"
-  }],
+  "contributors": [
+    {
+      "name": "Yaw Joseph Etse",
+      "email": "yaw.etse@gmail.com",
+      "url": "http://about.me/yawjosephetse"
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -40,29 +42,29 @@
     "url": "https://github.com/janbialostok/Replie/issues"
   },
   "homepage": "https://github.com/janbialostok/Replie#readme",
-  "_id": "replie@1.0.191",
-  "_shasum": "d75b4fcfe4f7a41fd43821a14aecdd708221f8d8",
-  "_from": "replie@*",
+  "_id": "replie@1.0.2",
+  "_shasum": "06a4fa3d298bad8009f2f6c2029d45f5e55decef",
+  "_from": "replie@1.0.2",
   "_npmVersion": "2.11.2",
   "_nodeVersion": "0.12.6",
   "_npmUser": {
-    "name": "janbialostok",
-    "email": "janbialostok@gmail.com"
+    "name": "yawetse",
+    "email": "yaw.etse@gmail.com"
   },
   "dist": {
-    "shasum": "d75b4fcfe4f7a41fd43821a14aecdd708221f8d8",
-    "tarball": "http://registry.npmjs.org/replie/-/replie-1.0.191.tgz"
+    "shasum": "06a4fa3d298bad8009f2f6c2029d45f5e55decef",
+    "tarball": "http://registry.npmjs.org/replie/-/replie-1.0.2.tgz"
   },
   "maintainers": [
     {
       "name": "janbialostok",
       "email": "janbialostok@gmail.com"
-    },{
-      "name": "Yaw Joseph Etse",
-      "email": "yaw.etse@gmail.com",
-      "url": "http://about.me/yawjosephetse"
+    },
+    {
+      "name": "yawetse",
+      "email": "yaw.etse@gmail.com"
     }
   ],
   "directories": {},
-  "_resolved": "https://registry.npmjs.org/replie/-/replie-1.0.191.tgz"
+  "_resolved": "https://registry.npmjs.org/replie/-/replie-1.0.2.tgz"
 }
