@@ -20,23 +20,41 @@ REPLIE Options
 }
  */
 // Example
-var repl = new REPLIE({
-		prompt: 'REPLIE',
-		startServer: true,
-		modules: [
-			{
-				name: 'shelljs',
-				type: 'external'
-			},
-			{
-				name: 'async',
-				type: 'external'
-			},
-			{
-				name: 'lodash.clone',
-				type: 'external'
-			}
-		],
-		namespace: 'test',
-		room: 'test'
-	});
+// var repl = new REPLIE({
+// 		prompt: 'REPLIE',
+// 		startServer: true,
+// 		modules: [
+// 			{
+// 				name: 'shelljs',
+// 				type: 'external'
+// 			},
+// 			{
+// 				name: 'async',
+// 				type: 'external'
+// 			},
+// 			{
+// 				name: 'lodash.clone',
+// 				type: 'external'
+// 			}
+// 		],
+// 		namespace: 'test',
+// 		room: 'test'
+// 	});
+
+// repl.start()
+// 	.then(rp => {
+// 		repl = rp;
+// 		try {
+// 			repl.define({
+// 				command: 'test',
+// 				help: 'A test command',
+// 				action: function (data) {
+// 					console.log(`this is the test command ${ data }`);
+// 					return data;
+// 				}
+// 			});
+// 		}
+// 		catch (e) {
+// 			console.log(e);
+// 		}
+// 	});
