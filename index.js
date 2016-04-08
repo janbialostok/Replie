@@ -37,5 +37,6 @@ var repl = new REPLIE({
 				type: 'external'
 			}
 		],
-		namespace: 'test'
+		namespace: 'test',
+		room: 'test'
 	});
