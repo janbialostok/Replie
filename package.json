@@ -1,10 +1,11 @@
 {
   "name": "replie",
-  "version": "1.0.21",
+  "version": "2.0.0",
   "description": "A basic web socket based repl",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node index.js"
   },
   "keywords": [
     "repl",
@@ -29,7 +30,9 @@
     "url": "git+https://github.com/janbialostok/Replie.git"
   },
   "dependencies": {
-    "bluebird": "^3.0.5",
+    "async": "^2.0.0-rc.2",
+    "express": "^4.13.4",
+    "promisie": "^1.0.4",
     "shelljs": "^0.5.3",
     "util-extend": "^1.0.1"
   },
@@ -42,11 +45,11 @@
     "url": "https://github.com/janbialostok/Replie/issues"
   },
   "homepage": "https://github.com/janbialostok/Replie#readme",
-  "_id": "replie@1.0.2",
+  "_id": "replie@2.0.0",
   "_shasum": "06a4fa3d298bad8009f2f6c2029d45f5e55decef",
   "_from": "replie@1.0.2",
   "_npmVersion": "2.11.2",
-  "_nodeVersion": "0.12.6",
+  "_nodeVersion": "4.2.4",
   "_npmUser": {
     "name": "yawetse",
     "email": "yaw.etse@gmail.com"
