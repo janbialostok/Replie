@@ -1,6 +1,7 @@
 'use strict';
 const Stream = require('stream'),
-	REPLIE = require('./replie');
+	path = require('path'),
+	REPLIE = require(path.join(__dirname, '../lib/replie'));
 
 (function (argv) {
 	let parseArguments = function (a) {
@@ -21,9 +22,6 @@ const Stream = require('stream'),
 	stream.readable = true;
 	stream.resume = function () {};
 	stream.pause = function () {};
-	stream.on('data', function (data) {
-		stream.emit('data', `${ data }\r\n`);
-	});
 	process.stdin.pipe(stream);
 	stream.pipe(process.stdout);
 	let options = parseArguments(argv);
