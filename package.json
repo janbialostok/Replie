@@ -1,6 +1,6 @@
 {
   "name": "replie",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "A basic web socket based repl",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,10 @@
   "keywords": [
     "repl",
     "node",
-    "websockets"
+    "websockets",
+    "socket.io",
+    "child_process",
+    "stream"
   ],
   "author": {
     "name": "Jan Bialostok",
