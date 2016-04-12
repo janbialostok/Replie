@@ -26,31 +26,31 @@ REPLIE Options
 }
  */
 // Example
-var repl = new REPLIE({
-		prompt: 'REPLIE',
-		child_process: true,
-		startServer: true,
-		modules: [
-			{
-				name: 'shelljs',
-				type: 'external'
-			},
-			{
-				name: 'async',
-				type: 'external'
-			},
-			{
-				name: 'lodash.clone',
-				type: 'external'
-			}
-		],
-		namespace: 'test',
-		room: 'test'
-	});
+// var repl = new REPLIE({
+// 		prompt: 'REPLIE',
+// 		child_process: true,
+// 		startServer: true,
+// 		modules: [
+// 			{
+// 				name: 'shelljs',
+// 				type: 'external'
+// 			},
+// 			{
+// 				name: 'async',
+// 				type: 'external'
+// 			},
+// 			{
+// 				name: 'lodash.clone',
+// 				type: 'external'
+// 			}
+// 		],
+// 		namespace: 'test',
+// 		room: 'test'
+// 	});
 
-repl.start()
-	.then(() => {
-		console.log('Started');
-	}, e => {
-		console.log('start error', e);
-	});
+// repl.start()
+// 	.then(() => {
+// 		console.log('Started');
+// 	}, e => {
+// 		console.log('start error', e);
+// 	});
