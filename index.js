@@ -1,7 +1,13 @@
 'use strict';
 
-var REPLIE = require('./lib/replie');
+var REPLIE = require('./lib/index');
 module.exports = REPLIE;
+
+// const spawn = require('child_process').spawn;
+
+// var runProcess = function () {
+
+// };
 /*
 REPLIE Options
 {
@@ -22,6 +28,7 @@ REPLIE Options
 // Example
 // var repl = new REPLIE({
 // 		prompt: 'REPLIE',
+// 		child_process: true,
 // 		startServer: true,
 // 		modules: [
 // 			{
@@ -42,19 +49,8 @@ REPLIE Options
 // 	});
 
 // repl.start()
-// 	.then(rp => {
-// 		repl = rp;
-// 		try {
-// 			repl.define({
-// 				command: 'test',
-// 				help: 'A test command',
-// 				action: function (data) {
-// 					console.log(`this is the test command ${ data }`);
-// 					return data;
-// 				}
-// 			});
-// 		}
-// 		catch (e) {
-// 			console.log(e);
-// 		}
+// 	.then(() => {
+// 		console.log('Started');
+// 	}, e => {
+// 		console.log('start error', e);
 // 	});
