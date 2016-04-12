@@ -1,12 +1,12 @@
 'use strict';
 
-var REPLIE = require('./lib/replie');
+var REPLIE = require('./lib/index');
 module.exports = REPLIE;
 
 // const spawn = require('child_process').spawn;
 
 // var runProcess = function () {
-	
+
 // };
 /*
 REPLIE Options
@@ -26,41 +26,31 @@ REPLIE Options
 }
  */
 // Example
-// var repl = new REPLIE({
-// 		prompt: 'REPLIE',
-// 		startServer: true,
-// 		modules: [
-// 			{
-// 				name: 'shelljs',
-// 				type: 'external'
-// 			},
-// 			{
-// 				name: 'async',
-// 				type: 'external'
-// 			},
-// 			{
-// 				name: 'lodash.clone',
-// 				type: 'external'
-// 			}
-// 		],
-// 		namespace: 'test',
-// 		room: 'test'
-// 	});
+var repl = new REPLIE({
+		prompt: 'REPLIE',
+		child_process: true,
+		startServer: true,
+		modules: [
+			{
+				name: 'shelljs',
+				type: 'external'
+			},
+			{
+				name: 'async',
+				type: 'external'
+			},
+			{
+				name: 'lodash.clone',
+				type: 'external'
+			}
+		],
+		namespace: 'test',
+		room: 'test'
+	});
 
-// repl.start()
-// 	.then(rp => {
-// 		repl = rp;
-// 		try {
-// 			repl.define({
-// 				command: 'test',
-// 				help: 'A test command',
-// 				action: function (data) {
-// 					console.log(`this is the test command ${ data }`);
-// 					return data;
-// 				}
-// 			});
-// 		}
-// 		catch (e) {
-// 			console.log(e);
-// 		}
-// 	});
+repl.start()
+	.then(() => {
+		console.log('Started');
+	}, e => {
+		console.log('start error', e);
+	});
